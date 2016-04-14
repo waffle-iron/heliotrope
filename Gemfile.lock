@@ -8,9 +8,10 @@ GIT
 
 GIT
   remote: https://github.com/curationexperts/fcrepo_wrapper.git
-  revision: b5b6470baf11e99a2b16ded6f915ee1137e5f486
+  revision: 94378ac04d62c0611b5ff06ff1d779013f836b21
+  branch: booleans
   specs:
-    fcrepo_wrapper (0.3.4.1)
+    fcrepo_wrapper (0.4.0)
       ruby-progressbar
 
 GIT

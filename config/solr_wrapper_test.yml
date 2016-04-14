@@ -1,0 +1,7 @@
+version: 5.4.1
+port: 8985
+download_dir: /var/tmp
+instance_dir: tmp/solr-test
+collection:
+    dir: solr/config
+    name: hydra-test
