@@ -1,7 +1,14 @@
 <% provide :page_title, @presenter.page_title %>
 <% provide :page_header do %>
-  <h1>File Details <small><%= @presenter.title %></small></h1>
 <% end %>
-<%= media_display @presenter %>
-<%= render "attributes", presenter: @presenter %>
-<%= render "show_actions", presenter: @presenter, parent: parent %>
+  <div class="row asset">
+    <%= render "media", presenter: @presenter %>
+    <div class="col-sm-6 asset-attributes">
+      <h2><%= @presenter.title %></h2>
+      <!-- how to get metadata for parent object? -->
+      <h3>From <a href="#">Book Title</a>, by Firstname Lastname</h3>
+      <br />
+      <%= render "attributes", presenter: @presenter %>
+    </div> <!-- /.asset-attributes -->
+  </div> <!-- /.asset -->
+  <%= render "show_actions", presenter: @presenter, parent: parent %>

@@ -1,0 +1,12 @@
+<!-- file_sets _media -->
+<div class="col-sm-6">
+  <div class="image">
+  <!-- <img data-src="holder.js/540x540" src="holder.js/540x540" class="img-thumbnail img-responsive"> -->
+  <%= media_display @presenter %>
+  <!-- <ul class="list-inline zoom">
+    <li><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span></li>
+    <li><span class="glyphicon glyphicon-zoom-out" aria-hidden="true"></span></li>
+  </ul> -->
+  </div>
+  <p><em><%= presenter.attribute_to_html(:caption, label: '') %></em></p>
+</div>
